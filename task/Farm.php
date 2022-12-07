@@ -44,18 +44,18 @@ class Farm
         }
     }
 
-    public function printAnimalsCounts(): void
+    public function printAnimals(): void
     {
-        echo "Кол-во животных на данный момент: \n";
+        echo "Количествово животных на ферме: \n";
         foreach ($this->animalCounter->get() as $animalName => $animalCount)
         {
             echo "$animalName: $animalCount \n";
         }
     }
 
-    public function printTotalProducts(): void
+    public function printProducts(): void
     {
-        echo "Кол-во продуктов на данный момент: \n";
+        echo "Количество продуктов на ферме: \n";
         foreach ($this->productCounter->get() as $productName => $productCount)
         {
             echo "$productName: $productCount \n";

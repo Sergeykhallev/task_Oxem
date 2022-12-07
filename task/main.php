@@ -17,14 +17,14 @@ $farm = new Farm(new AnimalCounter, new ProductCounter);
 
 $farm->addAnimals(new Cow, 10);
 $farm->addAnimals(new Chicken, 20);
-$farm->printAnimalsCounts();
+$farm->printAnimals();
 
 $farm->collect(7);
-$farm->printTotalProducts();
+$farm->printProducts();
 
 $farm->addAnimals(new Cow);
 $farm->addAnimals(new Chicken, 5);
-$farm->printAnimalsCounts();
+$farm->printAnimals();
 
 $farm->collect(7);
-$farm->printTotalProducts();
+$farm->printProducts();
